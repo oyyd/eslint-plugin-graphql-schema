@@ -1,5 +1,7 @@
 # eslint-plugin-graphql-schema
 
+[![build](https://api.travis-ci.org/oyyd/eslint-plugin-graphql-schema.svg?branch=master)](https://travis-ci.org/oyyd/eslint-plugin-graphql-schema)
+
 GraphQL schema specific linting rules for ESLint. Please open issues to help add new rule proposals.
 
 ![effects](screenshot.png)
