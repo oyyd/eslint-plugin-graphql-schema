@@ -12,13 +12,24 @@ $ npm i eslint eslint-plugin-graphql-schema  --save-dev
 
 ## Configuration
 
-Add `plugins` section and specify this plugin:
+Add `plugins` section and specify this plugin. Then enable all rules that you would like to use:
 
 ```json
 {
   "plugins": [
     "graphql-schema"
-  ]
+  ],
+  "rules": {
+    "graphql-schema/require-args-type": 2
+  }
+}
+```
+
+This plugin also exports `recommended` and `all` configuration:
+
+```json
+{
+  "extends": ["plugin:graphql-schema/recommended"]
 }
 ```
 

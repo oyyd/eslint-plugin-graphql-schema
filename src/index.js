@@ -10,7 +10,7 @@ const rules = {
 module.exports = {
   rules,
   configs: {
-    recommend: {
+    recommended: {
       plugins: [
         'graphql-schema',
       ],
@@ -25,5 +25,20 @@ module.exports = {
         'graphql-schema/require-constructor-props': 2,
       },
     },
+    all: {
+      plugins: [
+        'graphql-schema',
+      ],
+      parserOptions: {
+        ecmaVersion: 2015,
+        sourceType: 'module'
+      },
+      rules: {
+        'graphql-schema/require-args-type': 2,
+        'graphql-schema/require-fields-type': 2,
+        'graphql-schema/require-constructor-description': 2,
+        'graphql-schema/require-constructor-props': 2,
+      },
+    }
   },
 }
